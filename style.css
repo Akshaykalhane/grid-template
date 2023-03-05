@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    padding: 1rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-section {    
+    width: 766px;
+    height: 984px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.box {
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box1 {
+    background-image: url('./images/game-console-gbf16559d8_640.jpg');
+}
+
+.box2 {
+    background-image: url('./images/games-ga716963b6_640.jpg');
+}
+
+.box3 {
+    background-image: url('./images/gaming-g7802b762b_640.jpg');
+}
+
+.box4 {
+    background-image: url('./images/mario-ga161d676e_640.jpg');
+}
+
+.box5 {
+
+    background-image: url('./images/motherboard-ge6e79fcad_640.jpg');
+}
+
+.box6 {
+    background-image: url('./images/pexels-lucie-liz-3165335.jpg');
+}
+
+.box7 {
+
+    background-image: url('./images/ps4-gf901d3cec_640.jpg');
+}
+
+.box8 {
+
+    background-image: url('./images/robot-g446822511_640.jpg');
+}
+
+
+@media screen and (min-width:450px) {
+
+    .grid-section {
+        width: 766px;
+        height: 584px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+
+    .box1 , .box2 {
+        grid-column: 1 / span 2;
+    } 
+
+    .box3 {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
+    .box4 {
+         grid-row: 1 / span 2;
+         grid-column: 4;
+    }
+
+    .box5 , .box6 {
+        grid-row: 3 / span 2;
+    }
+
+
+    .box7, .box8 {
+         grid-column: 3 / span 2;
+    }
+
+}
